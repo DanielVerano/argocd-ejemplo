@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocdprueba
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: argocdprueba
+  template:
+    metadata:
+      labels:
+        app: argocdprueba
+    spec:
+      containers:
+      - name: argocdprueba
+        image: danvermor21/tekton-ejemplo
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
