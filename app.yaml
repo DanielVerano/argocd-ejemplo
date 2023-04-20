@@ -9,9 +9,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.kyndryl.net/daniel-verano-moreno/argocd-ejemplo
+    repoURL: https://github.com/DanielVerano/argocd-ejemplo
     path: manifests
-    targetRevision: main
+    targetRevision: master
   syncPolicy:
     automated:
       prune: true
