@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: argocdprueba
-        image: danvermor21/prueba-tekton:825e8da
+        image: danvermor21/prueba-tekton:3f45f8f
         resources:
           limits:
             memory: "128Mi"
